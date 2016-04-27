@@ -1,25 +1,25 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
-		<title>Modal Window Directive</title>
-	</head>
-	<body ng-app='myFirstDirective'>
-		<hello-simple-directive></hello-simple-directive>
-		<script type="text/javascript">
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+	<title>Modal Window Directive</title>
+</head>
+<body ng-app='myFirstDirective'>
+	<hello-simple-directive></hello-simple-directive>
+	<script type="text/javascript">
 
-			var app = angular.module('myFirstDirective', []);
+		var app = angular.module('myFirstDirective', []);
 
-			app.directive('helloSimpleDirective', function() {
-			  return {
-				scope: true,  // inherits child scope from parent.
-				restrict: 'E', // An Element Sirecitve.
-				replace: 'true',
-				template: '<h3>Hello a Very Simple Directive</h3>'
-			  };
-			});
+		app.directive('helloSimpleDirective', function() {
+		  return {
+			scope: true,  // inherits child scope from parent.
+			restrict: 'E', // An Element Sirecitve.
+			replace: 'true',
+			template: '<h3>Hello a Very Simple Directive</h3>'
+		  };
+		});
 
-		</script>
-	</body>
-	</html>
+	</script>
+</body>
+</html>
 
